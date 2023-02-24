@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta property="og:title" content="Astro Client">
+  <meta property="og:description" content="Astro Client is a minecraft PvP Client for 1.8-1.19 pvp with simple easy to use features">
+  <meta property="og:site_name" content="AstroClient">
+  <meta property="og:image" content="/logo.png">
+  <link rel="shortcut icon" type="image/png" href="assets/logo.png">
+  <title>Astro Client</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#8D21F7">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body class="bg-gradient-to-r from-violet-300 to-fuchsia-500 to-transparent">
+<nav class="p-8 bg-white shadow md:flex md:items-center md:justify-between">
+    <div class="flex justify-between items-center">
+        <span class="text drop-shadow-lg">
+        <img class="h-12 inline md:rounded-lg" src="assets/logo.png">
+            Astro Client
+        </span>
+
+        <span class="text-3x1 cursor-pointer md:hidden block">
+            <ion-icon name="menu-outline" onclick="Menu(this)"></ion-icon>
+        </span>
+    </div>
+
+    <ul class="md:flex md:items-center z[-1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+        <li class="mx-4 my-6 md:my-0">
+            <a href="#" class="navmenu hover:text-blue-500 duration-500 drop-shadow-lg">
+                <ion-icon name="home-outline"></ion-icon>
+                HOME
+            </a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+            <a href="https://discord.com/invite/pKf72QuMPM" class="navmenu hover:text-blue-500 duration-500 drop-shadow-lg">
+                <ion-icon name="information-circle-outline"></ion-icon>
+                ABOUT
+
+            </a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+            <a href="https://discord.com/invite/pKf72QuMPM" class="navmenu hover:text-blue-500 duration-500 drop-shadow-lg">
+                <ion-icon name="logo-discord"></ion-icon>
+                DISCORD
+            </a>
+        </li>
+
+        <button class="button my-6 md:my-0 bg-blue-400 duration-500 drop-shadow-lg px-6 py-2 mx-4 bg-gradient-to-r from-purple-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 rounded">
+            <ion-icon name="download-outline"></ion-icon>
+            DOWNLOAD
+        </button>
+    </ul>
+</nav>
+
+<div>
+    <div data-aos="fade-up" data-aos-anchor=".other-element">
+    <h1 class="title bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 drop-shadow-lg md:text-sl">
+        <br>
+        <br>
+        <br>
+        Astro Client
+    </h1>
+    <h1 class="description bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 drop-shadow-lg">
+        Astro Client. PvP Made Simpler and Easier.
+    </h1>
+    <br>
+    <br>
+    <br>
+    <br>
+<center>
+  <img class="example rounded drop-shadow-lg" src="assets/astroclient.png">
+</div>
+</div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer class="footer bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 drop-shadow-lg">
+        © Copyright Astro Client. 2023
+    </footer>
+</center>
+  <script src="https://unpkg.com/aos@next/dist/aos.js">
+  </script>
+  <script>
+    AOS.init();
+  </script>
+<script>
+    function Menu(e){
+        let list = document.querySelector('ul');
+
+        e.name === 'menu' ? (e.name = "close", list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'), list.classList.add('opacity-100'))
+    }
+</script>
+<style>
+    .text {
+        font-size: 30px;
+        font-family: 'Righteous', cursive;
+    }
+    .img {
+        height: 450px;
+        width: 900px;
+        border-radius: 19px;
+    }
+    .title {
+        font-size: 50px;
+        font-family: 'Righteous', cursive;
+        text-align: center;
+    }
+    .description {
+        font-size: 30px;
+        font-family: 'Righteous', cursive;
+        text-align: center;
+        top: 15px;
+    }
+    .footer {
+        font-size: 20px;
+        font-family: 'Righteous', cursive;
+        text-align: center;
+    }
+    .navmenu {
+        font-size: 25px;
+        font-family: 'Righteous', cursive; 
+    }
+    .button {
+        font-size: 25px;
+        font-family: 'Righteous', cursive; 
+        color: white
+    }
+    .example {
+        height: 650px;
+    }
+    @media (max-width:991px) {
+        .title {
+            padding-top: 2em;
+        }
+    }
+    @media (max-width:1500px) {
+        .example {
+            height: 500px;
+        }
+    }
+    
+</style>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Lilita+One&family=Righteous&display=swap');
+    @import url('https://fonts.cdnfonts.com/css/minecraft-4');
+    </style>
+</body>
+</html>
